@@ -1,0 +1,128 @@
+body {
+    background-image: url(ryz.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 960px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+    text-shadow: black 1px 1px 2px;
+}
+
+p {
+    text-align: justify;
+}
+
+nav ul {
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    width: 15%;
+}
+
+nav ul li a {
+    transition-duration: 1s;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 17pt;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul li a:visited {
+    color: brown;
+}
+
+nav ul li a:not(.logo):hover {
+    color: #fff;
+    text-shadow: #fff 0 0 3px;
+    background-color: #000;
+}
+
+p:hover {
+    background-color: rgba(75, 36, 4, 0.4);
+}
+
+img.jasmin {
+    float: right;
+    outline: 1px solid rgb(161, 110, 43);
+    margin: 0 0 15px 15px;
+}
+
+div.obrazki {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px){
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    main {
+        width: 960px;
+        margin: 10px auto;
+        padding: 50px;
+        border-radius: 16px;
+    }
+    
+    nav ul li {
+        width: 15%;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    main {
+        font-size: 130%;
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+   main {
+            width: 100%;
+            margin: 0;
+            padding: 0px;
+            border-radius: 0;
+        }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        font-size: 100%;
+        border-radius: 0;
+        padding: 0;
+        text-align:left;
+    }
+
+}
